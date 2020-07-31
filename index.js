@@ -34,6 +34,22 @@ var ValueArray = [];
 var DeptArray = [];
 var DeptHeightArray = [];
 
+console.log("Window:");
+console.log(window.devicePixelRatio);
+
+function SetZoom() {
+    if ((window.devicePixelRatio) === 1.5){
+            document.body.style.zoom = "67%"
+    }
+    else if ((window.devicePixelRatio === 1.25)){
+        document.body.style.zoom = "80%"
+    }
+    else if ((window.devicePixelRatio === 1.75)){
+        document.body.style.zoom = "25%"
+    }
+}
+
+
 
 function appendOverlay(clicked_id) {
     document.body.appendChild(overlay); // Append Overlay to body
